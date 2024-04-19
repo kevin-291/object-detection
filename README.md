@@ -19,7 +19,7 @@ This repository contains a Python script for a real-time object detection applic
 
     ```shell
     https://github.com/kevin-291/object-detection.git
-    cd your-repo
+    cd object-detection
     ```
 
 2. Create a Python virtual environment (optional but recommended):
