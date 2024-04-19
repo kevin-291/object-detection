@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 def main():
-    # Load YOLOv5 model
+    # Load YOLOv8 model
     model = YOLO('yolov8s.pt') 
     
     # Initialize video capture (0 for default camera)
