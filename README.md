@@ -1,10 +1,10 @@
-# Real-Time Object Detection App using YOLOv8
+# Real-Time Object Detection App using YOLOv9
 
-This repository contains a Python script for a real-time object detection application using the YOLOv8 model from Ultralytics. The application uses the default camera (webcam) for video input and displays detected objects with bounding boxes, including labels of the detected object and their probability.
+This repository contains a Python script for a real-time object detection application using the YOLOv9 model from Ultralytics. The application uses the default camera (webcam) for video input and displays detected objects with bounding boxes, including labels of the detected object and their probability.
 
 ## Features
 
-- Real-time object detection using YOLOv8.
+- Real-time object detection using YOLOv9.
 - Draws bounding boxes around detected objects with class labels and confidence scores.
 - Uses OpenCV for video capture and display.
 
@@ -59,6 +59,6 @@ This project is licensed under the MIT License.
 
 ## Credits
 
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics/tree/main/ultralytics/cfg/models/v8) for the object detection model.
+- [Ultralytics YOLOv9](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov9c.pt) for the object detection model.
 - [OpenCV](https://github.com/opencv/opencv) for video processing and display.
 
