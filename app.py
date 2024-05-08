@@ -1,9 +1,16 @@
 import cv2
+import torch
 from ultralytics import YOLO
+
+device = torch.device('cpu')
 
 def main():
     # Load YOLOv8 model
-    model = YOLO('yolov8s.pt') 
+    # model = YOLO('yolov8s.pt') 
+
+    # Load YOLOv9 model
+    model = YOLO('yolov9c.pt')
+    model.to(device)
     
     # Initialize video capture (0 for default camera)
     cap = cv2.VideoCapture(0)
@@ -51,7 +58,7 @@ def main():
         # Exit the loop if the user presses 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-    
+
     # Release the video capture device and close the window
     cap.release()
     cv2.destroyAllWindows()
