@@ -2,7 +2,7 @@ import cv2
 import torch
 from ultralytics import YOLO
 
-device = torch.device('cuda')
+device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
 def main():
     # Load YOLOv8 model
