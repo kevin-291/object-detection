@@ -5,9 +5,7 @@ from ultralytics import YOLO
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
 def main():
-    # Load YOLOv8 model
-    # model = YOLO('yolov8s.pt') 
-
+    
     # Load YOLOv9 model
     model = YOLO('yolov9c.pt')
     model.to(device)
@@ -28,7 +26,7 @@ def main():
             print("Error: Could not read frame")
             break
         
-        # Use YOLOv8 model to make predictions
+        # Use YOLOv9 model to make predictions
         results = model(frame)
         
         # Process the results
